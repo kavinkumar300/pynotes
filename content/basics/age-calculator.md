@@ -1,42 +1,10 @@
 ---
 title: Age-Calculator
-date: 2025-06-26
+date: 2025-06-29
 author: Your Name
-cell_count: 5
-score: 5
+cell_count: 1
+score: 0
 ---
-
-```python
-from datetime import datetime
-```
-
-
-```python
-def get_age(d):
-    d1 = datetime.now()
-    months = (d1.year - d.year) * 12 + d1.month - d.month
-
-    year = int(months / 12)
-    return year
-```
-
-
-```python
-age = get_age(datetime(1991, 1, 1))
-```
-
-
-```python
-age
-```
-
-
-
-
-    33
-
-
-
 
 ```python
 
@@ -44,4 +12,4 @@ age
 
 
 ---
-**Score: 5**
+**Score: 0**

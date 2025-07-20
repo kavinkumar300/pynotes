@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Ifelse</title>
+
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://kavinkumar300.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://kavinkumar300.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://kavinkumar300.github.io/pynotes/ifelse.html" rel="bookmark"
+        title="Permalink to Ifelse">Ifelse</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter a number&quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;positive&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;negative&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;zero&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>enter a number 4
+
+
+positive
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter number1:&quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter number2:&quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a is greater&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">b</span><span class="o">&gt;</span><span class="n">a</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b is greater&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;both are equal&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>enter number1: 3
+enter number2: 4
+
+
+b is greater
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter a numbre&quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">num</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">num</span><span class="o">%</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number is divisible by 3 and 5&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number is not divisible by 3 and 5&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>enter a numbre 4
+
+
+number is not divisible by 3 and 5
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter your email:&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="s2">&quot;@&quot;</span> <span class="ow">in</span> <span class="n">email</span> <span class="ow">and</span> <span class="s2">&quot;.&quot;</span> <span class="ow">in</span> <span class="n">email</span> <span class="ow">and</span> <span class="n">email</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">email</span><span class="o">.</span><span class="n">rindex</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valid email format&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid email format&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">enter</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="nl">email</span><span class="p">:</span><span class="w"> </span><span class="n">kvnkumar2006</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
+
+
+<span class="n">Valid</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="nf">format</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p>
+<p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://kavinkumar300.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://kavinkumar300.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/python-basics.html">python basics</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/kavinkumar300/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by kavin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

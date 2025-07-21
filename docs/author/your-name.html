@@ -216,6 +216,96 @@
 
 
             <article>
+                <a href="https://kavinkumar300.github.io/pynotes/binary-search.html"><h3 class="article-title">Binary Search</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># 202507221</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">chatgpt</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mi">687</span><span class="n">d381f</span><span class="o">-</span><span class="n">a7cc</span><span class="o">-</span><span class="mi">8012</span><span class="o">-</span><span class="n">aa0e</span><span class="o">-</span><span class="mi">4</span><span class="n">d36b9b1488c</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">low</span><span class="p">,</span> <span class="n">high</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">mid</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">elif</span> <span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">else</span><span class="p">:</span>
+            <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">binary_search …</span></code></pre></div><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/binary-search.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://kavinkumar300.github.io/pynotes/bubble-sort.html"><h3 class="article-title">Bubble Sort</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># 20250721</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">chatgpt</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mi">687</span><span class="n">d381f</span><span class="o">-</span><span class="n">a7cc</span><span class="o">-</span><span class="mi">8012</span><span class="o">-</span><span class="n">aa0e</span><span class="o">-</span><span class="mi">4</span><span class="n">d36b9b1488c</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">return</span> <span class="n">arr</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/bubble-sort.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://kavinkumar300.github.io/pynotes/dsa.html"><h3 class="article-title">Dsa</h3></a>
 <h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
 </h6>
@@ -320,6 +410,92 @@
 
 
             <article>
+                <a href="https://kavinkumar300.github.io/pynotes/fibonacci.html"><h3 class="article-title">Fibonacci</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># 20250721</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">chatgpt</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mi">687</span><span class="n">d381f</span><span class="o">-</span><span class="n">a7cc</span><span class="o">-</span><span class="mi">8012</span><span class="o">-</span><span class="n">aa0e</span><span class="o">-</span><span class="mi">4</span><span class="n">d36b9b1488c</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">recursive_fib</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">k</span>
+        <span class="k">return</span> <span class="n">recursive_fib</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">recursive_fib</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">return_list</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">use_recursion</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter a positive integer.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">return_list</span> <span class="k">else</span> <span class="kc">None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if …</span></code></pre></div><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/fibonacci.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://kavinkumar300.github.io/pynotes/find-duplicates-in-list.html"><h3 class="article-title">Find Duplicates In List</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># 20250721</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">chatgpt</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="mi">687</span><span class="n">d381f</span><span class="o">-</span><span class="n">a7cc</span><span class="o">-</span><span class="mi">8012</span><span class="o">-</span><span class="n">aa0e</span><span class="o">-</span><span class="mi">4</span><span class="n">d36b9b1488c</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">find_duplicates</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">duplicates</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="n">duplicates</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">else</span><span class="p">:</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">duplicates</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">find_duplicates</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/find-duplicates-in-list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://kavinkumar300.github.io/pynotes/forloop.html"><h3 class="article-title">Forloop</h3></a>
 <h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
 </h6>
@@ -394,64 +570,13 @@ positive
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://kavinkumar300.github.io/pynotes/testing.html"><h3 class="article-title">Testing</h3></a>
-<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;write your own code&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>write your own code
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/testing.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://kavinkumar300.github.io/pynotes/untitled.html"><h3 class="article-title">Untitled</h3></a>
-<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/python-basics.html">python basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/untitled.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 1 of 1</h6>
+<h6 class="subheader">Page 1 of 2</h6>
 
 <p>
 
+        <a href="https://kavinkumar300.github.io/pynotes/author/your-name2.html">Next &raquo;</a>
 </p>
 </div>
 

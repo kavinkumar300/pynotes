@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>My Python Notes</title>
+
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://kavinkumar300.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://kavinkumar300.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://kavinkumar300.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="https://kavinkumar300.github.io/pynotes/simple-task-manager.html"><h3 class="article-title">Simple Task Manager</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># 20250721</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">TASKS_FILE</span> <span class="o">=</span> <span class="s2">&quot;tasks.txt&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">load_tasks</span><span class="p">():</span>
+    <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">TASKS_FILE</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">TASKS_FILE</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">parts</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="n">task</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="n">parts</span>
+                    <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;task&#39;</span><span class="p">:</span> <span class="n">task</span><span class="p">,</span> <span class="s1">&#39;done&#39;</span><span class="p">:</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;done&#39;</span><span class="p">})</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="k">return</span> <span class="n">tasks</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">save_tasks</span><span class="p">(</span><span class="n">tasks</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">TASKS_FILE …</span></code></pre></div><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/simple-task-manager.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://kavinkumar300.github.io/pynotes/testing.html"><h3 class="article-title">Testing</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;write your own code&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>write your own code
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/testing.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://kavinkumar300.github.io/pynotes/untitled.html"><h3 class="article-title">Untitled</h3></a>
+<h6 class="subheader" title="2025-07-21T00:00:00-04:00">Mon 21 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://kavinkumar300.github.io/pynotes/category/python-basics.html">python basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://kavinkumar300.github.io/pynotes/untitled.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 2 of 2</h6>
+
+<p>
+            <a href="https://kavinkumar300.github.io/pynotes/index.html">&laquo; Prev</a>
+
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://kavinkumar300.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://kavinkumar300.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://kavinkumar300.github.io/pynotes/category/python-basics.html">python basics</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/kavinkumar300/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by kavin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
